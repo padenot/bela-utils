@@ -4,10 +4,9 @@
 # start the serialosc daemon on boot using systemd.
 # Requires an internet connection to use apt and git.
 
-git clone https://github.com/monome/libmonome.git
-cd libmonome
 sudo apt install libudev-dev liblo-dev libavahi-compat-libdnssd-dev
-cd libmonome
+
+git clone https://github.com/monome/libmonome.git
 ./waf configure
 ./waf
 sudo ./waf install
