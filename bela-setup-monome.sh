@@ -5,12 +5,14 @@
 # Requires an internet connection to use apt and git.
 
 git clone https://github.com/monome/libmonome.git
+cd libmonome
 sudo apt install libudev-dev liblo-dev libavahi-compat-libdnssd-dev
 cd libmonome
 ./waf configure
 ./waf
 sudo ./waf install
 cd ..
+
 git clone https://github.com/monome/serialosc.git
 cd serialosc
 git submodule init
